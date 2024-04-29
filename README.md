@@ -58,6 +58,27 @@ He realizado un análisis gráfico intensivo para observar cómo varían la prod
 ### Análisis de Componentes Principales (PCA)
 Para el análisis PCA, utilicé la librería scikit-learn en Python, que facilita la realización de esta técnica estadística. El objetivo era identificar las variables climáticas que tienen mayor impacto en la producción de energía fotovoltaica y en el consumo eléctrico. A través de PCA, pude reducir la dimensionalidad de los conjuntos de datos climáticos, extrayendo las principales componentes que explican la mayor parte de la variabilidad en los datos. Esto no solo simplificó el análisis posterior, sino que también destacó las características climáticas más influyentes que deben ser consideradas en el modelo predictivo.
 
+## Construcción del Modelo
+### Técnicas de Modelado Utilizadas
+En mi proyecto, he optado por el **Random Forest Regressor** como técnica principal de modelado debido a su eficacia en manejar datos no lineales y su robustez frente a overfitting, especialmente útil dada la complejidad de los datos de consumo y producción energética. Aunque también experimenté con XGBoost, los resultados no alcanzaron las expectativas, posiblemente debido a la sensibilidad de **XGBoost** a la configuración de hiperparámetros y al tamaño del dataset.
+
+Para optimizar el modelo de Random Forest, he implementado un GridSearch para la selección automática de hiperparámetros. Esta técnica me permitió probar una gama de configuraciones de hiperparámetros y seleccionar la combinación que maximiza el rendimiento del modelo.
+
+### Evaluación del Rendimiento
+El rendimiento del modelo se ha evaluado utilizando varias métricas estadísticas:
+
+*R2 Score: Esta métrica me proporciona una medida de cuánta variación en los datos puede explicarse por el modelo. Un R2 más alto indica un mejor ajuste del modelo a los datos.
+*MAE (Error Absoluto Medio): Esta métrica ayuda a entender la diferencia promedio entre los valores predichos y los valores reales, proporcionando una idea clara del error de predicción en las mismas unidades que la variable objetivo.
+*MSE (Error Cuadrático Medio) y RMSE (Raíz del Error Cuadrático Medio): Estas métricas penalizan más los errores grandes, lo cual es crucial en el contexto de la predicción energética, donde los errores grandes pueden tener implicaciones significativas.
+
+
+# ME FALTA PONER LAS CONCLUSIONES BIEN
+Conclusión
+Futuro del Proyecto
+Mirando hacia el futuro, estoy considerando expandir este modelo para incluir predicciones en tiempo real y el análisis de factores externos más detallados, como eventos climáticos extremos o cambios en la regulación energética. Estas expansiones no solo mejorarán la precisión de las predicciones sino que también ofrecerán herramientas más poderosas para la gestión energética adaptativa y proactiva.
+
+
+
 
 
 
