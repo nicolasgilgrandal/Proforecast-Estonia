@@ -68,7 +68,9 @@ Para optimizar el modelo de Random Forest, he implementado un GridSearch para la
 El rendimiento del modelo se ha evaluado utilizando varias métricas estadísticas:
 
 *R2 Score: Esta métrica me proporciona una medida de cuánta variación en los datos puede explicarse por el modelo. Un R2 más alto indica un mejor ajuste del modelo a los datos.
+
 *MAE (Error Absoluto Medio): Esta métrica ayuda a entender la diferencia promedio entre los valores predichos y los valores reales, proporcionando una idea clara del error de predicción en las mismas unidades que la variable objetivo.
+
 *MSE (Error Cuadrático Medio) y RMSE (Raíz del Error Cuadrático Medio): Estas métricas penalizan más los errores grandes, lo cual es crucial en el contexto de la predicción energética, donde los errores grandes pueden tener implicaciones significativas.
 
 
