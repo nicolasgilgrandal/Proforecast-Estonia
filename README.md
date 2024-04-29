@@ -18,7 +18,6 @@ Los datos para este proyecto son proporcionados íntegramente por Eesti Energia.
 * Consumo y Producción Energética: Datos detallados sobre el consumo y producción de energía por hora para prosumidores en Estonia.
 * Información Meteorológica: Datos sobre las condiciones climáticas que influyen directamente en la producción de energía solar.
 
-
 ## Detalles de los Datos
 ### Datos Brutos
 Los datos de consumo y producción energética se recopilan de forma continua, registrando mediciones cada hora, lo que resulta en 24 lecturas diarias por usuario. Cada registro especifica la cantidad de energía consumida o producida, medida en kilovatios-hora (kWh). Estos datos son recabados para cada prosumidor, permitiendo un seguimiento detallado y personalizado del flujo energético.
@@ -46,6 +45,20 @@ Dispongo de un dataset que incluye las longitudes y latitudes de diversas estaci
 En cuanto a la producción energética, tengo acceso a la capacidad fotovoltaica instalada de cada prosumidor. Por ello, inicialmente he seleccionado como variable objetivo el "work ratio" de las placas solares, que es el ratio de producción real respecto a la capacidad productiva teórica de cada instalación. Este enfoque me permite evaluar la eficiencia de la producción solar en relación con la capacidad instalada.
 
 Para el consumo, he decidido continuar utilizando los datos en kilovatios-hora (kWh). Esta medida estándar me facilita el análisis y comparación del consumo energético entre diferentes prosumidores y condiciones temporales.
+
+## Análisis Exploratorio de Datos (EDA)
+En la fase de Análisis Exploratorio de Datos, he empleado varios métodos para comprender mejor las características y relaciones subyacentes en los datos de producción y consumo energético. Utilicé herramientas gráficas y técnicas estadísticas avanzadas para extraer insights valiosos y dirigir el desarrollo del modelo de predicción.
+
+### Análisis Gráfico
+He realizado un análisis gráfico intensivo para observar cómo varían la producción y la variable objetivo a lo largo del tiempo. Esto incluye:
+
+* Variación Diaria: Gráficos que muestran las tendencias de producción y consumo a lo largo de los diferentes días de la semana, identificando patrones recurrentes o anomalías en días específicos.
+* Variación Anual: Análisis de cómo cambian la producción y el consumo a lo largo de los días del año, lo cual es crucial para entender el impacto estacional, especialmente relevante en la producción energética solar.
+* Variación Horaria: Estudios de cómo fluctúan la producción y el consumo durante las diferentes horas del día, lo que ayuda a identificar los picos de demanda y oferta.
+### Análisis de Componentes Principales (PCA)
+Para el análisis PCA, utilicé la librería scikit-learn en Python, que facilita la realización de esta técnica estadística. El objetivo era identificar las variables climáticas que tienen mayor impacto en la producción de energía fotovoltaica y en el consumo eléctrico. A través de PCA, pude reducir la dimensionalidad de los conjuntos de datos climáticos, extrayendo las principales componentes que explican la mayor parte de la variabilidad en los datos. Esto no solo simplificó el análisis posterior, sino que también destacó las características climáticas más influyentes que deben ser consideradas en el modelo predictivo.
+
+
 
 
 
