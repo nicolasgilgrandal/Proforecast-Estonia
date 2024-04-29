@@ -36,6 +36,18 @@ He incorporado un término de laggeo para las variables de consumo y producción
 He creado clusters basados en la similitud de las condiciones climáticas que afectan significativamente el consumo y la producción energética. Utilizando técnicas de agrupamiento, seleccioné las variables climáticas más influyentes para definir estos grupos. Posteriormente, agrupé los datos de consumo y producción según estos clusters climáticos. Esto me permite acceder y utilizar los registros de consumo y producción de ocasiones anteriores cuando las condiciones climáticas eran similares, mejorando significativamente la capacidad de predecir cómo variarán el consumo y la producción bajo condiciones climáticas específicas.
 
 
+## Preprocesamiento
+En la etapa de preprocesamiento, he tomado varias decisiones clave para garantizar la precisión y relevancia de los datos utilizados en el modelo. Estas decisiones se centran principalmente en la gestión de los datos meteorológicos y en la definición de las variables objetivo para el consumo y la producción energética.
+
+### Filtrado de Datos Meteorológicos
+Dispongo de un dataset que incluye las longitudes y latitudes de diversas estaciones meteorológicas. He realizado un filtrado para eliminar aquellas estaciones que se encuentran fuera de la geografía de Estonia, asegurándome de que los datos climáticos utilizados sean exclusivamente locales. Además, cada estación está asignada a un condado específico. Aunque no conozco la longitud y la latitud exactas de los prosumidores, sí sé en qué condado están ubicados. Por lo tanto, he decidido utilizar como condición climática el valor medio de todas las estaciones meteorológicas dentro del mismo condado. Esto me permite asumir un conjunto uniforme de condiciones climáticas para cada condado, simplificando el modelo al reducir la variabilidad geográfica innecesaria.
+
+### Definición de Variables Objetivo
+En cuanto a la producción energética, tengo acceso a la capacidad fotovoltaica instalada de cada prosumidor. Por ello, inicialmente he seleccionado como variable objetivo el "work ratio" de las placas solares, que es el ratio de producción real respecto a la capacidad productiva teórica de cada instalación. Este enfoque me permite evaluar la eficiencia de la producción solar en relación con la capacidad instalada.
+
+Para el consumo, he decidido continuar utilizando los datos en kilovatios-hora (kWh). Esta medida estándar me facilita el análisis y comparación del consumo energético entre diferentes prosumidores y condiciones temporales.
+
+
 
 
 
