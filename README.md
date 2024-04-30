@@ -74,9 +74,21 @@ El rendimiento del modelo se ha evaluado utilizando varias métricas estadístic
 *MSE (Error Cuadrático Medio) y RMSE (Raíz del Error Cuadrático Medio): Estas métricas penalizan más los errores grandes, lo cual es crucial en el contexto de la predicción energética, donde los errores grandes pueden tener implicaciones significativas.
 
 
-# ME FALTA PONER LAS CONCLUSIONES BIEN
-Conclusión
-Futuro del Proyecto
+# Conclusión
+
+Este proyecto ha desarrollado un modelo inicial para predecir el consumo y la producción energética de prosumidores en Estonia. Aunque es complicado medir la exactitud del modelo debido a la diversidad en las franjas de valores entre usuarios, el error absoluto medio (MAE) es aproximadamente el 40% de la varianza de los datos, lo cual es un resultado aceptable para una primera versión.
+
+El modelo muestra cierto overfitting, ajustándose mejor a los datos de entrenamiento que a los de prueba. En futuras versiones, abordaré este desafío mediante técnicas avanzadas de regularización y la expansión del conjunto de datos para mejorar la generalización del modelo. Este esfuerzo inicial establece una base sólida para futuras mejoras, con el objetivo de realizar predicciones más precisas y adaptativas en entornos dinámicos.
+
+## Posibles Futuras Mejoras 
+* Predicciones Climáticas: Estudiar la posibilidad de incorporar predicciones climáticas para anticipar con mayor precisión la producción y el consumo energético en diferentes intervalos de tiempo.
+* Mejora del Modelo: Focalizar en la mejora de la exactitud y en la reducción del overfitting, con vistas a escalar el modelo a otras regiones geográficas.
+* Clusters Climáticos: Considerar aumentar el número de clusters climáticos para refinar la especificidad entre los distintos tipos de climas y mejorar la precisión de las predicciones.
+* Nuevas Variables: Valorar la inclusión de nuevas variables en el modelo que puedan optimizar los resultados, basándose en un análisis detallado de las necesidades y comportamientos de los prosumidores.
+Estos pasos no solo apuntan a optimizar el rendimiento del modelo actual, sino también a expandir su aplicabilidad y relevancia en el ámbito de la gestión energética sostenible.
+
+
+## Futuro del Proyecto
 Mirando hacia el futuro, estoy considerando expandir este modelo para incluir predicciones en tiempo real y el análisis de factores externos más detallados, como eventos climáticos extremos o cambios en la regulación energética. Estas expansiones no solo mejorarán la precisión de las predicciones sino que también ofrecerán herramientas más poderosas para la gestión energética adaptativa y proactiva.
 
 
