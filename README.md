@@ -1,5 +1,4 @@
 # Proforecast-Estonia
-![Alt text](/Logo.jpg)
 <img src="/Logo.jpg" alt="Alt text" width="200"/>
 
 
