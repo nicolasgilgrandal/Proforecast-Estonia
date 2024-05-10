@@ -1,5 +1,7 @@
 # Proforecast-Estonia
 ![Alt text](/Logo.jpg)
+<img src="path/to/logo.png" alt="Alt text" width="200"/>
+
 
 Este proyecto desarrolla un modelo de Machine Learning para predecir el consumo y producción energética de prosumidores en Estonia. Se lleva a cabo una limpieza de los datos y una creación de nuevas variables para mejorar las predicciones. Ideal para gestores energéticos y análisis de autosuficiencia energética para distintos tipos de usuarios. 
 
