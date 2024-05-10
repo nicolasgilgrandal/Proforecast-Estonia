@@ -93,7 +93,7 @@ Mirando hacia el futuro, estoy considerando expandir este modelo para incluir pr
 
 # Vídeo de la presentación del proyecto.
 A continuación, dejo el enlace al vídeo donde presento y explico el contexto, la metodología y los resultados obtenidos de este proyecto.
-Link: [Vídeo](https://www.youtube.com/watch?v=d6P50dd31zQ&list=PLu9btTx-JjG8CU1pXgagXSTux2NBBCoQo&index=57, link)
+Link: [Vídeo](https://www.youtube.com/watch?v=d6P50dd31zQ&list=PLu9btTx-JjG8CU1pXgagXSTux2NBBCoQo&index=57_link)
 
 
 
